@@ -4,9 +4,15 @@ install_github('karabanb/BKmisc') #install package from github
 1
 library(BKmisc)
 
-#----------- Descriptive Statistics -----------------
+#------------- Descriptive Statistics -----------------
+##Basic functions
+mean()
+sd() #standard deviation
+quantile()
+sd/mean*100 #coefficient of variation [%]
 
-# range --  obserwacja max - obserwacja min
+
+# range ==  obserwacja max - obserwacja min
 range_gp <- function(variables) {
   max(viariables) - min(variables)
 }
@@ -20,10 +26,9 @@ w2 <- c(4,5,5,5,6,6,6,6,7,7,8,8)
 
 quantile(w1) #quantiles
 
-
 sd1 <- sd(w1) #standard deviation
 mean1 <- mean(w1) #mean
-sd1/mean1*100 #wspolczynik zmienności?? -- standard deviation / mean
+sd1/mean1*100 #wspolczynik zmienności?? == standard deviation / mean
 
 sd2 <- sd(w2)
 mean2 <- mean(w2)
